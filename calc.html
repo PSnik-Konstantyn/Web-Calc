@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuel Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1 class="calculator-title">Веб калькулятор для палива</h1>
+        <form id="fuelCalculator">
+            <div class="input-group">
+                <label for="H">H<sup>P</sup>:</label>
+                <input type="text" id="H" name="H" required>
+                <label for="C">C<sup>P</sup>:</label>
+                <input type="text" id="C" name="C" required>
+            </div>
+            <div class="input-group">
+                <label for="S">S<sup>P</sup>:</label>
+                <input type="text" id="S" name="S" required>
+                <label for="N">N<sup>P</sup>:</label>
+                <input type="text" id="N" name="N" required>
+            </div>
+            <div class="input-group">
+                <label for="O">O<sup>P</sup>:</label>
+                <input type="text" id="O" name="O" required>
+            </div>
+            <div class="input-group">
+                <label for="W">W:</label>
+                <input type="text" id="W" name="W" required>
+            </div>
+            <div class="input-group">
+                <label for="A">A:</label>
+                <input type="text" id="A" name="A" required>
+            </div>
+            <p class="formula">Формула: C<sup>P</sup> + H<sup>P</sup> + S<sup>P</sup> + O<sup>P</sup> + N<sup>P</sup> + A + W = 100%</p>
+            <button type="button" onclick="btnClick()">Розрахувати</button>
+        </form>
+        <div id="resultsContainer" class="results-container">
+        
+        </div>
+    </div>
+    <script src="js/calc.js"></script>
+</body>
+</html>
