@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Schedule</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <div class="top">
+        <div>
+            <div id="date-time" style="margin-top: 20px; margin-left: 600px; font-size: 20px; text-align: center"></div>
+        </div>
+        <div style="float: right; margin-top: 20px; font-size: 20px;">Адміністратор</div>
+
+    </div>
+
+    <div class="container">
+        <div class="schedule-container">
+            <h2 class="schedule-title">Графік доставки</h2>
+            <div class="results-container" id="delivery-schedule"></div>
+        </div>
+        <div class="schedule-container">
+            <h2 class="schedule-title">Графік відправлень</h2>
+            <div class="results-container" id="shipment-schedule"></div>
+        </div>
+        <div class="info-pole">
+            <h3>Кількість працівників</h3>
+            <p>17</p>
+        </div>
+
+        <div class="info-pole-2">
+            <h3>Кількість тон</h3>
+            <p>21 тона</p>
+        </div>
+        
+        <div class="info-pole-3">
+            <h3>Таймер</h3>
+            <p id="timer">12:02:19</p>
+        </div>
+
+        <div style="margin-top: 120px; margin-left: 50px; ">
+            <canvas id="ton-chart" width="400" height="200"></canvas>
+        </div>
+
+        <div style="margin-top: 120px; margin-left: 30px; ">
+            <h3 class="schedule-title">Список доступних працівників</h2>
+            <div class="results-container" id="workers"></div>
+        </div>
+
+        <div style="margin-top: 30px; margin-left: 20px;">
+            <button class="report-button">Звітність</button>
+            <button class="schedule-button">Графік роботи</button>
+        </div>
+
+    </div>
+
+   
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
